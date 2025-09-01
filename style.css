@@ -1,0 +1,120 @@
+* {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+}
+/* <!-- game info --> */
+.gameInfo {
+  display: block;
+  background-color: #ffe4c4a9;
+  background-size: cover;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+/* <!-- area & start button --> */
+#gameArea {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(231, 227, 222, 0.774);
+  width: 500px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid rgb(114, 114, 112);
+}
+#startGame {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(45, 202, 93);
+  color: rgba(0, 0, 0, 0.849);
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#startGame:hover {
+  background-color: rgb(115, 235, 115);
+}
+
+/* the click button that will be appear after start */
+.clickButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  background-color: #f5b86ea9;
+  color: rgb(24, 37, 37);
+  border-radius: 10px;
+  animation: popIn 0.3s ease-out;
+}
+@keyframes popIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* simple alert */
+#alertBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.alertContent {
+  background: rgb(235, 232, 232);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  width: 350px;
+  font-size: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: pop 0.3s ease;
+}
+.alertContent span {
+  font-size: 25px;
+  color: blue;
+}
+#alertBox button {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(56, 136, 211);
+}
+#alertBox button:hover {
+  background-color: rgba(101, 187, 224, 0.452);
+}
+@keyframes pop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

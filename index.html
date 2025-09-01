@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quick game, click the button!</h1>
+
+      <!-- game info -->
+      <div class="gameInfo">
+        <p>Score : <span id="score">0</span></p>
+        <p>Timer: <span id="time">15</span>s</p>
+      </div>
+      <!-- area & start button -->
+      <div id="gameArea"></div>
+      <button id="startGame">Start</button>
+
+      <!-- simple alert -->
+      <div id="alertBox">
+        <div class="alertContent">
+          <p>Stop Game! Your Score Is: <span id="Fscore">0</span></p>
+          <button id="alertClose">Done</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
